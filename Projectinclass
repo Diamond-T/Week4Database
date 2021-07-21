@@ -1,0 +1,45 @@
+SELECT *
+FROM customer;
+
+SELECT *
+FROM order_;
+
+
+--Inner JOIN
+--finds what we are joining 
+--only get the records that match the left and right side
+--matching records 
+--adds another to the end of the list
+--to combine records from two or more tables in a database
+--only returns what is given 
+SELECT *
+FROM customer
+INNER JOIN order_
+ON customer.customer_id = order_.customer_id;
+
+
+--LEFT JOIN
+--null when nothing is in that order
+--NUll because there is nothing in that order
+SELECT first_name, last_name, customer.customer_id, amount
+FROM customer --left TABLE
+LEFT JOIN order_ --right TABLE
+ON customer.customer_id = order_.customer_id;
+
+--right JOIN
+--return data to the right side of the table
+SELECT first_name, last_name, customer.customer_id, amount
+FROM customer --left TABLE
+RIGHT JOIN order_ --right TABLE
+ON customer.customer_id = order_.customer_id;
+
+--Full JOIN
+--sends back all the data that matches 
+SELECT *
+FROM customer
+FULL JOIN order_
+ON customer.customer_id = order_.customer_id;
+
+
+--SUB querty
+--running quiery witin quiery
