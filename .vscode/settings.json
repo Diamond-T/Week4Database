@@ -19,6 +19,16 @@
             "name": "test-db",
             "username": "postgres",
             "database": "president_example"
+        },
+        {
+            "previewLimit": 50,
+            "server": "50.116.42.155",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "test-db",
+            "username": "postgres",
+            "database": "test-db1"
         }
     ]
 }
